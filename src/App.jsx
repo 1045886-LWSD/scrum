@@ -56,7 +56,7 @@ export default function App() {
   // App-level state keeps the demo easy to explain: API data, current view,
   // filters, selected task, theme, and real-time notifications all live here.
   const [data, setData] = useState({ tasks: [], members: [], sprints: [], activity: [] });
-  const [view, setView] = useState("dashboard");
+  const [view, setView] = useState(() => localStorage.getItem("view") || "dashboard");
   const [filters, setFilters] = useState(defaultFilters);
   const [selectedTask, setSelectedTask] = useState(null);
   const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "light");
@@ -75,6 +75,10 @@ export default function App() {
   }, [theme]);
 
   useEffect(() => {
+    localStorage.setItem("view", view);
+  }, [view]);
+
+  useEffect(() => {
     // Socket.io lets two browser windows see task changes without refreshing.
     const socket = io();
     socket.on("data:changed", setData);
@@ -84,6 +88,9 @@ export default function App() {
 
   useEffect(() => {
     function handleShortcuts(event) {
+      const isTyping = ["INPUT", "SELECT", "TEXTAREA"].includes(event.target.tagName);
+      if (isTyping || event.ctrlKey || event.metaKey || event.altKey) return;
+
       if (event.key === "1") setView("dashboard");
       if (event.key === "2") setView("board");
       if (event.key === "3") setView("grid");
@@ -92,7 +99,7 @@ export default function App() {
 
     window.addEventListener("keydown", handleShortcuts);
     return () => window.removeEventListener("keydown", handleShortcuts);
-  });
+  }, [data.members]);
 
   const filteredTasks = useMemo(() => applyFilters(data.tasks, filters), [data.tasks, filters]);
   const stats = useMemo(() => calculateStats(data.tasks, data.members), [data.tasks, data.members]);
