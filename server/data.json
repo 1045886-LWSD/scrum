@@ -55,6 +55,78 @@
   ],
   "activity": [
     {
+      "id": "a-1778263313703",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778263313661",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778263313631",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778263313626",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778263313606",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778263313582",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778263285660",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778263272085",
+      "message": "Created task \"New sprint task\"",
+      "type": "create",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778263270344",
+      "message": "Created task \"New sprint task\"",
+      "type": "create",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778263267514",
+      "message": "Created task \"New sprint task\"",
+      "type": "create",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778263265641",
+      "message": "Created task \"New sprint task\"",
+      "type": "create",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778263263529",
+      "message": "Created task \"New sprint task\"",
+      "type": "create",
+      "time": "just now"
+    },
+    {
       "id": "a-1778263148201",
       "message": "Moved \"Add AI task suggestion mockup\" to To Do",
       "type": "move",
@@ -92,6 +164,136 @@
     }
   ],
   "tasks": [
+    {
+      "id": "task-1778263272085",
+      "progress": 0,
+      "points": 3,
+      "comments": [],
+      "subtasks": [
+        {
+          "text": "Define acceptance criteria",
+          "done": false
+        }
+      ],
+      "attachments": [],
+      "updatedAt": "2026-05-08T18:01:12.085Z",
+      "title": "New sprint task",
+      "description": "Describe the work, acceptance criteria, and expected outcome.",
+      "priority": "Medium",
+      "assignee": "alex",
+      "dueDate": "2026-05-15",
+      "startDate": "2026-05-08",
+      "status": "Backlog",
+      "tags": [
+        "Planning"
+      ],
+      "label": "#2563eb",
+      "notes": ""
+    },
+    {
+      "id": "task-1778263270344",
+      "progress": 0,
+      "points": 3,
+      "comments": [],
+      "subtasks": [
+        {
+          "text": "Define acceptance criteria",
+          "done": false
+        }
+      ],
+      "attachments": [],
+      "updatedAt": "2026-05-08T18:01:10.344Z",
+      "title": "New sprint task",
+      "description": "Describe the work, acceptance criteria, and expected outcome.",
+      "priority": "Medium",
+      "assignee": "alex",
+      "dueDate": "2026-05-15",
+      "startDate": "2026-05-08",
+      "status": "Backlog",
+      "tags": [
+        "Planning"
+      ],
+      "label": "#2563eb",
+      "notes": ""
+    },
+    {
+      "id": "task-1778263267514",
+      "progress": 26,
+      "points": 3,
+      "comments": [],
+      "subtasks": [
+        {
+          "text": "Define acceptance criteria",
+          "done": false
+        }
+      ],
+      "attachments": [],
+      "updatedAt": "2026-05-08T18:01:53.703Z",
+      "title": "New sprint task",
+      "description": "Describe the work, acceptance criteria, and expected outcome.",
+      "priority": "Medium",
+      "assignee": "alex",
+      "dueDate": "2026-05-15",
+      "startDate": "2026-05-08",
+      "status": "Backlog",
+      "tags": [
+        "Planning"
+      ],
+      "label": "#000000",
+      "notes": ""
+    },
+    {
+      "id": "task-1778263265641",
+      "progress": 0,
+      "points": 3,
+      "comments": [],
+      "subtasks": [
+        {
+          "text": "Define acceptance criteria",
+          "done": false
+        }
+      ],
+      "attachments": [],
+      "updatedAt": "2026-05-08T18:01:05.641Z",
+      "title": "New sprint task",
+      "description": "Describe the work, acceptance criteria, and expected outcome.",
+      "priority": "Medium",
+      "assignee": "alex",
+      "dueDate": "2026-05-15",
+      "startDate": "2026-05-08",
+      "status": "Backlog",
+      "tags": [
+        "Planning"
+      ],
+      "label": "#2563eb",
+      "notes": ""
+    },
+    {
+      "id": "task-1778263263529",
+      "progress": 0,
+      "points": 3,
+      "comments": [],
+      "subtasks": [
+        {
+          "text": "Define acceptance criteria",
+          "done": false
+        }
+      ],
+      "attachments": [],
+      "updatedAt": "2026-05-08T18:01:03.529Z",
+      "title": "New sprint task",
+      "description": "Describe the work, acceptance criteria, and expected outcome.",
+      "priority": "Medium",
+      "assignee": "alex",
+      "dueDate": "2026-05-15",
+      "startDate": "2026-05-08",
+      "status": "Backlog",
+      "tags": [
+        "Planning"
+      ],
+      "label": "#2563eb",
+      "notes": ""
+    },
     {
       "id": "task-1",
       "title": "Design responsive dashboard layout",
