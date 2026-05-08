@@ -1,11 +1,47 @@
 {
   "members": [
-    { "id": "alex", "name": "Alex Johnson", "role": "Scrum Master", "avatar": "AJ", "color": "#2563eb" },
-    { "id": "sarah", "name": "Sarah Kim", "role": "Frontend Developer", "avatar": "SK", "color": "#db2777" },
-    { "id": "david", "name": "David Chen", "role": "Backend Developer", "avatar": "DC", "color": "#059669" },
-    { "id": "maya", "name": "Maya Patel", "role": "QA Engineer", "avatar": "MP", "color": "#7c3aed" },
-    { "id": "ethan", "name": "Ethan Wilson", "role": "UX Designer", "avatar": "EW", "color": "#ea580c" },
-    { "id": "olivia", "name": "Olivia Garcia", "role": "Product Owner", "avatar": "OG", "color": "#0f766e" }
+    {
+      "id": "alex",
+      "name": "Alex Johnson",
+      "role": "Scrum Master",
+      "avatar": "AJ",
+      "color": "#2563eb"
+    },
+    {
+      "id": "sarah",
+      "name": "Sarah Kim",
+      "role": "Frontend Developer",
+      "avatar": "SK",
+      "color": "#db2777"
+    },
+    {
+      "id": "david",
+      "name": "David Chen",
+      "role": "Backend Developer",
+      "avatar": "DC",
+      "color": "#059669"
+    },
+    {
+      "id": "maya",
+      "name": "Maya Patel",
+      "role": "QA Engineer",
+      "avatar": "MP",
+      "color": "#7c3aed"
+    },
+    {
+      "id": "ethan",
+      "name": "Ethan Wilson",
+      "role": "UX Designer",
+      "avatar": "EW",
+      "color": "#ea580c"
+    },
+    {
+      "id": "olivia",
+      "name": "Olivia Garcia",
+      "role": "Product Owner",
+      "avatar": "OG",
+      "color": "#0f766e"
+    }
   ],
   "sprints": [
     {
@@ -18,10 +54,42 @@
     }
   ],
   "activity": [
-    { "id": "a1", "message": "Sarah moved Login redesign to Testing", "time": "10 minutes ago", "type": "move" },
-    { "id": "a2", "message": "David attached API schema notes", "time": "28 minutes ago", "type": "file" },
-    { "id": "a3", "message": "Olivia updated Sprint 12 goal", "time": "1 hour ago", "type": "sprint" },
-    { "id": "a4", "message": "Maya completed checklist item on accessibility test plan", "time": "2 hours ago", "type": "check" }
+    {
+      "id": "a-1778263148201",
+      "message": "Moved \"Add AI task suggestion mockup\" to To Do",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778263144111",
+      "message": "Moved \"Create presentation screenshots\" to To Do",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a1",
+      "message": "Sarah moved Login redesign to Testing",
+      "time": "10 minutes ago",
+      "type": "move"
+    },
+    {
+      "id": "a2",
+      "message": "David attached API schema notes",
+      "time": "28 minutes ago",
+      "type": "file"
+    },
+    {
+      "id": "a3",
+      "message": "Olivia updated Sprint 12 goal",
+      "time": "1 hour ago",
+      "type": "sprint"
+    },
+    {
+      "id": "a4",
+      "message": "Maya completed checklist item on accessibility test plan",
+      "time": "2 hours ago",
+      "type": "check"
+    }
   ],
   "tasks": [
     {
@@ -33,19 +101,36 @@
       "dueDate": "2026-05-11",
       "startDate": "2026-05-03",
       "status": "In Progress",
-      "tags": ["UX", "Dashboard"],
+      "tags": [
+        "UX",
+        "Dashboard"
+      ],
       "progress": 70,
       "label": "#2563eb",
       "points": 8,
       "updatedAt": "2026-05-08T09:34:00.000Z",
-      "comments": ["Use tighter spacing on laptop screens.", "Add a compact state for mobile."],
+      "comments": [
+        "Use tighter spacing on laptop screens.",
+        "Add a compact state for mobile."
+      ],
       "notes": "Primary presentation screen.",
       "subtasks": [
-        { "text": "Wireframe dashboard zones", "done": true },
-        { "text": "Build responsive layout", "done": true },
-        { "text": "Review with product owner", "done": false }
+        {
+          "text": "Wireframe dashboard zones",
+          "done": true
+        },
+        {
+          "text": "Build responsive layout",
+          "done": true
+        },
+        {
+          "text": "Review with product owner",
+          "done": false
+        }
       ],
-      "attachments": ["dashboard-wireframe.pdf"]
+      "attachments": [
+        "dashboard-wireframe.pdf"
+      ]
     },
     {
       "id": "task-2",
@@ -56,17 +141,32 @@
       "dueDate": "2026-05-10",
       "startDate": "2026-05-02",
       "status": "Testing",
-      "tags": ["React", "Kanban"],
+      "tags": [
+        "React",
+        "Kanban"
+      ],
       "progress": 90,
       "label": "#db2777",
       "points": 13,
       "updatedAt": "2026-05-08T10:04:00.000Z",
-      "comments": ["Demo this live by moving a card.", "Keep the code easy to read."],
+      "comments": [
+        "Demo this live by moving a card.",
+        "Keep the code easy to read."
+      ],
       "notes": "Uses native drag events to avoid hiding logic in a library.",
       "subtasks": [
-        { "text": "Create board columns", "done": true },
-        { "text": "Move card between statuses", "done": true },
-        { "text": "Persist changes through API", "done": true }
+        {
+          "text": "Create board columns",
+          "done": true
+        },
+        {
+          "text": "Move card between statuses",
+          "done": true
+        },
+        {
+          "text": "Persist changes through API",
+          "done": true
+        }
       ],
       "attachments": []
     },
@@ -79,20 +179,39 @@
       "dueDate": "2026-05-09",
       "startDate": "2026-05-01",
       "status": "Done",
-      "tags": ["API", "Node"],
+      "tags": [
+        "API",
+        "Node"
+      ],
       "progress": 100,
       "label": "#059669",
       "points": 8,
       "updatedAt": "2026-05-07T15:20:00.000Z",
-      "comments": ["CRUD routes are ready for the demo."],
+      "comments": [
+        "CRUD routes are ready for the demo."
+      ],
       "notes": "Good code walkthrough section.",
       "subtasks": [
-        { "text": "GET tasks", "done": true },
-        { "text": "POST task", "done": true },
-        { "text": "PATCH task", "done": true },
-        { "text": "DELETE task", "done": true }
+        {
+          "text": "GET tasks",
+          "done": true
+        },
+        {
+          "text": "POST task",
+          "done": true
+        },
+        {
+          "text": "PATCH task",
+          "done": true
+        },
+        {
+          "text": "DELETE task",
+          "done": true
+        }
       ],
-      "attachments": ["api-routes.md"]
+      "attachments": [
+        "api-routes.md"
+      ]
     },
     {
       "id": "task-4",
@@ -103,17 +222,31 @@
       "dueDate": "2026-05-13",
       "startDate": "2026-05-06",
       "status": "To Do",
-      "tags": ["QA", "Accessibility"],
+      "tags": [
+        "QA",
+        "Accessibility"
+      ],
       "progress": 25,
       "label": "#7c3aed",
       "points": 5,
       "updatedAt": "2026-05-08T08:10:00.000Z",
-      "comments": ["Include keyboard shortcut checks."],
+      "comments": [
+        "Include keyboard shortcut checks."
+      ],
       "notes": "Use WCAG language in the presentation.",
       "subtasks": [
-        { "text": "List major user flows", "done": true },
-        { "text": "Test keyboard navigation", "done": false },
-        { "text": "Document findings", "done": false }
+        {
+          "text": "List major user flows",
+          "done": true
+        },
+        {
+          "text": "Test keyboard navigation",
+          "done": false
+        },
+        {
+          "text": "Document findings",
+          "done": false
+        }
       ],
       "attachments": []
     },
@@ -126,19 +259,36 @@
       "dueDate": "2026-05-14",
       "startDate": "2026-05-05",
       "status": "In Progress",
-      "tags": ["Presentation", "Scrum"],
+      "tags": [
+        "Presentation",
+        "Scrum"
+      ],
       "progress": 55,
       "label": "#0f766e",
       "points": 5,
       "updatedAt": "2026-05-08T09:45:00.000Z",
-      "comments": ["Add real company examples.", "Keep definitions short."],
+      "comments": [
+        "Add real company examples.",
+        "Keep definitions short."
+      ],
       "notes": "This supports the speaking portion.",
       "subtasks": [
-        { "text": "Define Agile", "done": true },
-        { "text": "Compare Kanban and Scrum", "done": true },
-        { "text": "Add examples", "done": false }
+        {
+          "text": "Define Agile",
+          "done": true
+        },
+        {
+          "text": "Compare Kanban and Scrum",
+          "done": true
+        },
+        {
+          "text": "Add examples",
+          "done": false
+        }
       ],
-      "attachments": ["agile-outline.docx"]
+      "attachments": [
+        "agile-outline.docx"
+      ]
     },
     {
       "id": "task-6",
@@ -148,17 +298,26 @@
       "assignee": "alex",
       "dueDate": "2026-05-15",
       "startDate": "",
-      "status": "Backlog",
-      "tags": ["AI", "Planning"],
+      "status": "To Do",
+      "tags": [
+        "AI",
+        "Planning"
+      ],
       "progress": 0,
       "label": "#2563eb",
       "points": 3,
-      "updatedAt": "2026-05-06T11:12:00.000Z",
+      "updatedAt": "2026-05-08T17:59:08.201Z",
       "comments": [],
       "notes": "Mockup only, no real AI service needed.",
       "subtasks": [
-        { "text": "Write example suggestions", "done": false },
-        { "text": "Add notification item", "done": false }
+        {
+          "text": "Write example suggestions",
+          "done": false
+        },
+        {
+          "text": "Add notification item",
+          "done": false
+        }
       ],
       "attachments": []
     },
@@ -171,16 +330,27 @@
       "dueDate": "2026-05-12",
       "startDate": "2026-05-07",
       "status": "To Do",
-      "tags": ["Realtime", "Backend"],
+      "tags": [
+        "Realtime",
+        "Backend"
+      ],
       "progress": 35,
       "label": "#059669",
       "points": 8,
       "updatedAt": "2026-05-08T07:54:00.000Z",
-      "comments": ["Show this by opening two browser windows."],
+      "comments": [
+        "Show this by opening two browser windows."
+      ],
       "notes": "Socket events are small and easy to present.",
       "subtasks": [
-        { "text": "Install Socket.io", "done": true },
-        { "text": "Emit task updated events", "done": false }
+        {
+          "text": "Install Socket.io",
+          "done": true
+        },
+        {
+          "text": "Emit task updated events",
+          "done": false
+        }
       ],
       "attachments": []
     },
@@ -192,17 +362,28 @@
       "assignee": "maya",
       "dueDate": "2026-05-15",
       "startDate": "",
-      "status": "Backlog",
-      "tags": ["Presentation", "Docs"],
+      "status": "To Do",
+      "tags": [
+        "Presentation",
+        "Docs"
+      ],
       "progress": 10,
       "label": "#ea580c",
       "points": 2,
-      "updatedAt": "2026-05-07T12:04:00.000Z",
-      "comments": ["Leave placeholders in the README."],
+      "updatedAt": "2026-05-08T17:59:04.111Z",
+      "comments": [
+        "Leave placeholders in the README."
+      ],
       "notes": "Nice final polish for the project.",
       "subtasks": [
-        { "text": "Dashboard screenshot", "done": false },
-        { "text": "Board screenshot", "done": false }
+        {
+          "text": "Dashboard screenshot",
+          "done": false
+        },
+        {
+          "text": "Board screenshot",
+          "done": false
+        }
       ],
       "attachments": []
     }
