@@ -17,7 +17,7 @@ const velocity = [
   { sprint: "S12", points: 42 }
 ];
 
-const colors = ["#64748b", "#f59e0b", "#f97316", "#ef4444"];
+const colors = ["#cbd5e1", "#fde68a", "#fed7aa", "#fecaca"];
 
 export default function Dashboard({ data, stats }) {
   const recent = [...data.tasks].sort((a, b) => new Date(b.updatedAt) - new Date(a.updatedAt)).slice(0, 4);
@@ -80,7 +80,7 @@ export default function Dashboard({ data, stats }) {
               <XAxis dataKey="sprint" />
               <YAxis />
               <Tooltip />
-              <Bar dataKey="points" fill="#059669" radius={[6, 6, 0, 0]} />
+              <Bar dataKey="points" fill="#9ee6c7" radius={[6, 6, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </section>
@@ -101,23 +101,6 @@ export default function Dashboard({ data, stats }) {
         </section>
       </div>
 
-      <section className="panel">
-        <h2 className="section-title">Team Directory</h2>
-        <div className="mt-4 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-          {data.members.map((member) => {
-            const count = data.tasks.filter((task) => task.assignee === member.id).length;
-            return (
-              <div className="flex items-center gap-3 rounded-md border border-slate-200 p-3 dark:border-slate-800" key={member.id}>
-                <Avatar member={member} />
-                <div>
-                  <p className="font-bold">{member.name}</p>
-                  <p className="text-sm text-slate-500">{member.role} - {count} assigned</p>
-                </div>
-              </div>
-            );
-          })}
-        </div>
-      </section>
     </div>
   );
 }
