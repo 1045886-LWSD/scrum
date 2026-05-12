@@ -55,6 +55,156 @@
   ],
   "activity": [
     {
+      "id": "a-1778606058767",
+      "message": "Moved \"New sprint task\" to Done",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778606057331",
+      "message": "Moved \"New sprint task\" to Testing",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778606045230",
+      "message": "Moved \"New sprint task\" to Done",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778605978668",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778605978661",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778605978626",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778605978614",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778605978565",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778605978501",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778605978494",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778605978472",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778605978404",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778605978367",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778605978295",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778605978243",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778605978200",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778605978188",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778605978182",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778605978133",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778605978028",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778605977992",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778605977705",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778605977608",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778605771356",
+      "message": "Updated \"New sprint taskdfgdfg\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778605751039",
+      "message": "Created task \"New sprint task\"",
+      "type": "create",
+      "time": "just now"
+    },
+    {
       "id": "a-1778263536310",
       "message": "Created task \"New sprint task\"",
       "type": "create",
@@ -177,8 +327,8 @@
   ],
   "tasks": [
     {
-      "id": "task-1778263536310",
-      "progress": 0,
+      "id": "task-1778605751039",
+      "progress": 20,
       "points": 3,
       "comments": [],
       "subtasks": [
@@ -188,14 +338,40 @@
         }
       ],
       "attachments": [],
-      "updatedAt": "2026-05-08T18:05:36.310Z",
+      "updatedAt": "2026-05-12T17:09:31.356Z",
+      "title": "New sprint taskdfgdfg",
+      "description": "Describe the work, acceptance criteria, and expected outcome.dfgdfg",
+      "priority": "Critical",
+      "assignee": "alex",
+      "dueDate": "2026-05-15",
+      "startDate": "2026-05-08",
+      "status": "Backlog",
+      "tags": [
+        "Planning"
+      ],
+      "label": "#1f96e5",
+      "notes": "dfgdfg"
+    },
+    {
+      "id": "task-1778263536310",
+      "progress": 8,
+      "points": 3,
+      "comments": [],
+      "subtasks": [
+        {
+          "text": "Define acceptance criteria",
+          "done": false
+        }
+      ],
+      "attachments": [],
+      "updatedAt": "2026-05-12T17:14:18.767Z",
       "title": "New sprint task",
       "description": "Describe the work, acceptance criteria, and expected outcome.",
       "priority": "Medium",
       "assignee": "alex",
       "dueDate": "2026-05-15",
       "startDate": "2026-05-08",
-      "status": "Backlog",
+      "status": "Done",
       "tags": [
         "Planning"
       ],
