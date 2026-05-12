@@ -55,6 +55,18 @@
   ],
   "activity": [
     {
+      "id": "a-1778263536310",
+      "message": "Created task \"New sprint task\"",
+      "type": "create",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778263534196",
+      "message": "Moved \"Add AI task suggestion mockup\" to In Progress",
+      "type": "move",
+      "time": "just now"
+    },
+    {
       "id": "a-1778263313703",
       "message": "Updated \"New sprint task\"",
       "type": "update",
@@ -164,6 +176,32 @@
     }
   ],
   "tasks": [
+    {
+      "id": "task-1778263536310",
+      "progress": 0,
+      "points": 3,
+      "comments": [],
+      "subtasks": [
+        {
+          "text": "Define acceptance criteria",
+          "done": false
+        }
+      ],
+      "attachments": [],
+      "updatedAt": "2026-05-08T18:05:36.310Z",
+      "title": "New sprint task",
+      "description": "Describe the work, acceptance criteria, and expected outcome.",
+      "priority": "Medium",
+      "assignee": "alex",
+      "dueDate": "2026-05-15",
+      "startDate": "2026-05-08",
+      "status": "Backlog",
+      "tags": [
+        "Planning"
+      ],
+      "label": "#2563eb",
+      "notes": ""
+    },
     {
       "id": "task-1778263272085",
       "progress": 0,
@@ -500,7 +538,7 @@
       "assignee": "alex",
       "dueDate": "2026-05-15",
       "startDate": "",
-      "status": "To Do",
+      "status": "In Progress",
       "tags": [
         "AI",
         "Planning"
@@ -508,7 +546,7 @@
       "progress": 0,
       "label": "#2563eb",
       "points": 3,
-      "updatedAt": "2026-05-08T17:59:08.201Z",
+      "updatedAt": "2026-05-08T18:05:34.196Z",
       "comments": [],
       "notes": "Mockup only, no real AI service needed.",
       "subtasks": [
