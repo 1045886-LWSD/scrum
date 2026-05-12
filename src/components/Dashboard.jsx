@@ -41,7 +41,7 @@ export default function Dashboard({ data, stats }) {
               <YAxis />
               <Tooltip />
               <Line type="monotone" dataKey="ideal" stroke="#94a3b8" strokeWidth={2} />
-              <Line type="monotone" dataKey="actual" stroke="#2563eb" strokeWidth={3} />
+              <Line type="monotone" dataKey="actual" stroke="#a6cae2" strokeWidth={3} />
             </LineChart>
           </ResponsiveContainer>
         </section>
@@ -54,7 +54,7 @@ export default function Dashboard({ data, stats }) {
               <XAxis dataKey="name" />
               <YAxis allowDecimals={false} />
               <Tooltip />
-              <Bar dataKey="tasks" fill="#2563eb" radius={[6, 6, 0, 0]} />
+              <Bar dataKey="tasks" fill="#a6cae2" radius={[6, 6, 0, 0]} />
             </BarChart>
           </ResponsiveContainer>
         </section>

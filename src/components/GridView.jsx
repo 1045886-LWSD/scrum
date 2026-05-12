@@ -26,7 +26,7 @@ export default function GridView({ tasks, members, onTaskClick, onUpdate }) {
               return (
                 <tr className="border-t border-slate-200 hover:bg-slate-50 dark:border-slate-800 dark:hover:bg-slate-800/60" key={task.id}>
                   <td className="px-4 py-4">
-                    <button className="font-bold text-blue-600 hover:underline dark:text-blue-300" onClick={() => onTaskClick(task)}>{task.title}</button>
+                    <button className="font-bold text-accent hover:underline" onClick={() => onTaskClick(task)}>{task.title}</button>
                   </td>
                   <td className="max-w-[280px] px-4 py-4 text-slate-600 dark:text-slate-300">{task.description}</td>
                   <td className="px-4 py-4"><span className={`badge ${priorityStyles[task.priority]}`}>{task.priority}</span></td>
@@ -44,7 +44,7 @@ export default function GridView({ tasks, members, onTaskClick, onUpdate }) {
                     <div className="flex flex-wrap gap-1">{task.tags.map((tag) => <span className="tag" key={tag}>{tag}</span>)}</div>
                   </td>
                   <td className="px-4 py-4">
-                    <input className="w-24 accent-blue-600" type="range" min="0" max="100" value={task.progress} onChange={(event) => onUpdate(task.id, { progress: Number(event.target.value) })} />
+                    <input className="w-24 accent-control" type="range" min="0" max="100" value={task.progress} onChange={(event) => onUpdate(task.id, { progress: Number(event.target.value) })} />
                     <span className="ml-2 text-xs font-bold">{task.progress}%</span>
                   </td>
                 </tr>

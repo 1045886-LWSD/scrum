@@ -41,7 +41,7 @@ function createBlankTask(memberId) {
     status: "Backlog",
     tags: ["Planning"],
     progress: 0,
-    label: "#2563eb",
+    label: "#a6cae2",
     points: 3,
     notes: "",
     comments: [],
@@ -61,6 +61,7 @@ export default function App() {
   const [filters, setFilters] = useState(defaultFilters);
   const [selectedTask, setSelectedTask] = useState(null);
   const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "light");
+  const [isRailOpen, setIsRailOpen] = useState(false);
   const [notifications, setNotifications] = useState([
     { title: "Sprint reminder", message: "Daily standup starts at 9:30 AM." },
     { title: "Calendar sync", message: "Sprint review is mocked for May 15." }
@@ -128,9 +129,14 @@ export default function App() {
     <div className="min-h-screen bg-slate-50 text-slate-950 transition-colors dark:bg-slate-950 dark:text-slate-100">
       <main>
         <header className="sticky top-0 z-10 border-b border-slate-200 bg-white/90 px-4 py-4 backdrop-blur dark:border-slate-800 dark:bg-slate-950/90 sm:px-6">
-          <button className="theme-button absolute right-4 top-4" title="Toggle dark mode" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-            {theme === "dark" ? <Sun size={15} /> : <Moon size={15} />}
-          </button>
+          <div className="absolute right-4 top-4 flex items-center gap-2">
+            <button className="theme-button" title="Toggle dark mode" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+              {theme === "dark" ? <Sun size={15} /> : <Moon size={15} />}
+            </button>
+            <button className="theme-button" title="Toggle sprint panel" onClick={() => setIsRailOpen((open) => !open)}>
+              <Bell size={15} />
+            </button>
+          </div>
           <div className="flex justify-center">
             <div className="flex flex-wrap items-center justify-center gap-2">
               <SegmentedButton active={view === "dashboard"} onClick={() => setView("dashboard")} icon={<LayoutDashboard size={17} />} label="Dashboard" />
@@ -144,17 +150,18 @@ export default function App() {
         </header>
 
         <section className="px-4 py-5 sm:px-6">
-          <div className="grid gap-5 xl:grid-cols-[1fr_320px]">
+          <div>
             <div className="space-y-5">
               <Filters filters={filters} members={data.members} onChange={updateFilter} />
               {view === "dashboard" && <Dashboard data={data} stats={stats} />}
               {view === "board" && <BoardView members={data.members} tasks={filteredTasks} onTaskClick={setSelectedTask} onMoveTask={patchTask} />}
               {view === "grid" && <GridView members={data.members} tasks={filteredTasks} onTaskClick={setSelectedTask} onUpdate={patchTask} />}
             </div>
-            <RightRail data={data} stats={stats} notifications={notifications} />
           </div>
         </section>
       </main>
+
+      <RightRail isOpen={isRailOpen} onClose={() => setIsRailOpen(false)} data={data} stats={stats} notifications={notifications} />
 
       {selectedTask && (
         <TaskModal
@@ -217,14 +224,28 @@ function Filters({ filters, members, onChange }) {
   );
 }
 
-function RightRail({ data, stats, notifications }) {
+function RightRail({ isOpen, onClose, data, stats, notifications }) {
   const sprint = data.sprints[0];
   return (
-    <aside className="space-y-5">
-      <section className="panel">
+    <>
+      <div
+        className={`fixed inset-0 z-30 bg-slate-950/30 transition-opacity ${isOpen ? "opacity-100" : "pointer-events-none opacity-0"}`}
+        onClick={onClose}
+      />
+      <aside
+        className={`fixed bottom-0 right-0 top-0 z-40 w-full max-w-sm overflow-y-auto border-l border-slate-200 bg-slate-50 p-4 shadow-2xl transition-transform duration-300 dark:border-slate-800 dark:bg-slate-950 ${
+          isOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="mb-4 flex items-center justify-between">
+          <h2 className="text-lg font-black">Sprint Panel</h2>
+          <button className="theme-button" title="Close sprint panel" onClick={onClose}>x</button>
+        </div>
+        <div className="space-y-5">
+          <section className="panel">
         <div className="flex items-center justify-between">
           <h2 className="section-title">Sprint</h2>
-          <CalendarDays size={18} className="text-blue-500" />
+          <CalendarDays size={18} className="text-accent" />
         </div>
         <h3 className="mt-3 text-lg font-bold">{sprint?.name}</h3>
         <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">{sprint?.goal}</p>
@@ -234,7 +255,7 @@ function RightRail({ data, stats, notifications }) {
             <span>{formatDate(sprint?.endDate)}</span>
           </div>
           <div className="mt-2 h-2 rounded-full bg-slate-200 dark:bg-slate-800">
-            <div className="h-2 rounded-full bg-blue-600" style={{ width: `${stats.percent}%` }} />
+            <div className="h-2 rounded-full bg-accent" style={{ width: `${stats.percent}%` }} />
           </div>
         </div>
       </section>
@@ -242,7 +263,7 @@ function RightRail({ data, stats, notifications }) {
       <section className="panel">
         <div className="flex items-center justify-between">
           <h2 className="section-title">Notifications</h2>
-          <Bell size={18} className="text-blue-500" />
+          <Bell size={18} className="text-accent" />
         </div>
         <div className="mt-3 space-y-3">
           {notifications.slice(0, 4).map((note, index) => (
@@ -257,7 +278,7 @@ function RightRail({ data, stats, notifications }) {
       <section className="panel">
         <div className="flex items-center justify-between">
           <h2 className="section-title">AI Suggestions</h2>
-          <Bot size={18} className="text-blue-500" />
+          <Bot size={18} className="text-accent" />
         </div>
         <div className="mt-3 space-y-3">
           {aiSuggestions.map((suggestion) => (
@@ -280,6 +301,8 @@ function RightRail({ data, stats, notifications }) {
           ))}
         </div>
       </section>
-    </aside>
+        </div>
+      </aside>
+    </>
   );
 }

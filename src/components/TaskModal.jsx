@@ -26,7 +26,7 @@ export default function TaskModal({ task, members, onClose, onSave }) {
       <section className="max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-lg bg-white p-5 shadow-2xl dark:bg-slate-900">
         <div className="flex items-start justify-between gap-4">
           <div>
-            <p className="text-sm font-semibold text-blue-600 dark:text-blue-300">Task editor</p>
+            <p className="text-sm font-semibold text-accent">Task editor</p>
             <h2 className="text-2xl font-bold">{task.title}</h2>
           </div>
           <button className="icon-button" title="Close" onClick={onClose}><X size={18} /></button>
@@ -55,7 +55,7 @@ export default function TaskModal({ task, members, onClose, onSave }) {
             </select>
           </label>
           <label className="field">Progress
-            <input className="mt-3 w-full accent-blue-600" type="range" min="0" max="100" value={draft.progress} onChange={(event) => update("progress", event.target.value)} />
+            <input className="mt-3 w-full accent-control" type="range" min="0" max="100" value={draft.progress} onChange={(event) => update("progress", event.target.value)} />
             <span className="text-sm font-bold">{draft.progress}%</span>
           </label>
           <label className="field">Start Date

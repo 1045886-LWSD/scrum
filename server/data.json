@@ -5,7 +5,7 @@
       "name": "Alex Johnson",
       "role": "Scrum Master",
       "avatar": "AJ",
-      "color": "#2563eb"
+      "color": "#a6cae2"
     },
     {
       "id": "sarah",
@@ -199,7 +199,7 @@
       "tags": [
         "Planning"
       ],
-      "label": "#2563eb",
+      "label": "#a6cae2",
       "notes": ""
     },
     {
@@ -225,7 +225,7 @@
       "tags": [
         "Planning"
       ],
-      "label": "#2563eb",
+      "label": "#a6cae2",
       "notes": ""
     },
     {
@@ -251,7 +251,7 @@
       "tags": [
         "Planning"
       ],
-      "label": "#2563eb",
+      "label": "#a6cae2",
       "notes": ""
     },
     {
@@ -303,7 +303,7 @@
       "tags": [
         "Planning"
       ],
-      "label": "#2563eb",
+      "label": "#a6cae2",
       "notes": ""
     },
     {
@@ -329,7 +329,7 @@
       "tags": [
         "Planning"
       ],
-      "label": "#2563eb",
+      "label": "#a6cae2",
       "notes": ""
     },
     {
@@ -346,7 +346,7 @@
         "Dashboard"
       ],
       "progress": 70,
-      "label": "#2563eb",
+      "label": "#a6cae2",
       "points": 8,
       "updatedAt": "2026-05-08T09:34:00.000Z",
       "comments": [
@@ -544,7 +544,7 @@
         "Planning"
       ],
       "progress": 0,
-      "label": "#2563eb",
+      "label": "#a6cae2",
       "points": 3,
       "updatedAt": "2026-05-08T18:05:34.196Z",
       "comments": [],

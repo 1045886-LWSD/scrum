@@ -28,10 +28,10 @@ const sections = [
 export default function EducationPage() {
   return (
     <div className="space-y-5">
-      <section className="rounded-lg bg-blue-600 p-6 text-white shadow-sm">
+      <section className="rounded-lg p-6 text-slate-900 shadow-sm" style={{ backgroundColor: "#a6cae2" }}>
         <p className="text-sm font-semibold uppercase opacity-80">Presentation support</p>
         <h2 className="mt-2 text-3xl font-black">Scrum turns a project into visible, organized teamwork.</h2>
-        <p className="mt-3 max-w-3xl text-blue-50">
+        <p className="mt-3 max-w-3xl text-slate-700">
           This page gives you quick speaking notes for explaining the software engineering ideas behind the app.
         </p>
       </section>

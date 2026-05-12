@@ -27,7 +27,12 @@ textarea {
 }
 
 .primary-button {
-  @apply inline-flex min-h-10 items-center gap-2 rounded-md bg-blue-600 px-4 text-sm font-bold text-white shadow-sm transition hover:bg-blue-700;
+  @apply inline-flex min-h-10 items-center gap-2 rounded-md px-4 text-sm font-bold text-slate-900 shadow-sm transition;
+  background-color: #a6cae2;
+}
+
+.primary-button:hover {
+  background-color: #95bdd8;
 }
 
 .secondary-button {
@@ -47,11 +52,18 @@ textarea {
 }
 
 .segmented-active {
-  @apply border-blue-600 bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-200;
+  @apply text-slate-900 dark:text-slate-950;
+  background-color: #a6cae2;
+  border-color: #a6cae2;
 }
 
 .input {
-  @apply min-h-10 w-full rounded-md border border-slate-300 bg-white px-3 text-sm outline-none transition focus:border-blue-500 focus:ring-2 focus:ring-blue-200 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100 dark:focus:ring-blue-950;
+  @apply min-h-10 w-full rounded-md border border-slate-300 bg-white px-3 text-sm outline-none transition focus:ring-2 dark:border-slate-700 dark:bg-slate-950 dark:text-slate-100;
+}
+
+.input:focus {
+  border-color: #a6cae2;
+  --tw-ring-color: rgb(166 202 226 / 0.45);
 }
 
 .field {
@@ -72,4 +84,16 @@ textarea {
 
 .card-meta {
   @apply inline-flex items-center gap-1 text-xs font-bold;
+}
+
+.text-accent {
+  color: #7aa9c7;
+}
+
+.bg-accent {
+  background-color: #a6cae2;
+}
+
+.accent-control {
+  accent-color: #a6cae2;
 }
