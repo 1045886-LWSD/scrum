@@ -127,12 +127,8 @@ export default function App() {
     <div className="min-h-screen bg-slate-50 text-slate-950 transition-colors dark:bg-slate-950 dark:text-slate-100">
       <main>
         <header className="sticky top-0 z-10 border-b border-slate-200 bg-white/90 px-4 py-4 backdrop-blur dark:border-slate-800 dark:bg-slate-950/90 sm:px-6">
-          <div className="flex flex-col gap-4 xl:flex-row xl:items-center xl:justify-between">
-            <div>
-              <p className="text-sm font-semibold text-blue-600 dark:text-blue-300">Scrum and Agile Workflow Management</p>
-              <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">AgileFlow Sprint Workspace</h1>
-            </div>
-            <div className="flex flex-wrap items-center gap-2">
+          <div className="flex justify-center">
+            <div className="flex flex-wrap items-center justify-center gap-2">
               <SegmentedButton active={view === "dashboard"} onClick={() => setView("dashboard")} icon={<LayoutDashboard size={17} />} label="Dashboard" />
               <SegmentedButton active={view === "board"} onClick={() => setView("board")} icon={<Columns3 size={17} />} label="Board" />
               <SegmentedButton active={view === "grid"} onClick={() => setView("grid")} icon={<Grid3X3 size={17} />} label="Grid" />
