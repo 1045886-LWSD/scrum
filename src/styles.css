@@ -66,6 +66,10 @@ textarea {
   --tw-ring-color: rgb(166 202 226 / 0.45);
 }
 
+.search-input {
+  padding-left: 2.75rem;
+}
+
 .field {
   @apply text-sm font-bold text-slate-600 dark:text-slate-300;
 }

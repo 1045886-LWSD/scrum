@@ -20,6 +20,7 @@ import BoardView from "./components/BoardView";
 import Dashboard from "./components/Dashboard";
 import GridView from "./components/GridView";
 import TaskModal from "./components/TaskModal";
+import Avatar from "./components/Avatar";
 
 const defaultFilters = {
   search: "",
@@ -193,7 +194,7 @@ function Filters({ filters, members, onChange }) {
       <div className="grid gap-3 md:grid-cols-[minmax(220px,1fr)_repeat(5,minmax(140px,180px))]">
         <label className="relative">
           <Search className="absolute left-3 top-1/2 size-4 -translate-y-1/2 text-slate-400" />
-          <input className="input pl-9" value={filters.search} onChange={(event) => onChange("search", event.target.value)} placeholder="Search tasks, tags, descriptions" />
+          <input className="input search-input" value={filters.search} onChange={(event) => onChange("search", event.target.value)} placeholder="Search tasks, tags, descriptions" />
         </label>
         <select className="input" value={filters.priority} onChange={(event) => onChange("priority", event.target.value)}>
           <option>All</option>
@@ -299,6 +300,24 @@ function RightRail({ isOpen, onClose, data, stats, notifications }) {
               <p className="text-xs uppercase text-slate-500">{item.time}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="panel">
+        <h2 className="section-title">Team Directory</h2>
+        <div className="mt-4 space-y-3">
+          {data.members.map((member) => {
+            const count = data.tasks.filter((task) => task.assignee === member.id).length;
+            return (
+              <div className="flex items-center gap-3 rounded-md border border-slate-200 p-3 dark:border-slate-800" key={member.id}>
+                <Avatar member={member} />
+                <div>
+                  <p className="font-bold">{member.name}</p>
+                  <p className="text-sm text-slate-500">{member.role} - {count} assigned</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </section>
         </div>

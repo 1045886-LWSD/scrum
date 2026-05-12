@@ -1,8 +1,30 @@
+import { useEffect, useState } from "react";
 import { priorityStyles, STATUSES } from "../constants";
 import { formatDate, getMember } from "../utils";
 import Avatar from "./Avatar";
 
 export default function GridView({ tasks, members, onTaskClick, onUpdate }) {
+  const [draftProgress, setDraftProgress] = useState({});
+
+  useEffect(() => {
+    setDraftProgress((current) => {
+      const next = { ...current };
+      tasks.forEach((task) => {
+        if (next[task.id] === undefined) {
+          next[task.id] = task.progress;
+        }
+      });
+      return next;
+    });
+  }, [tasks]);
+
+  function commitProgress(task) {
+    const progress = Number(draftProgress[task.id] ?? task.progress);
+    if (progress !== task.progress) {
+      onUpdate(task.id, { progress });
+    }
+  }
+
   return (
     <div className="overflow-hidden rounded-lg border border-slate-200 bg-white shadow-sm dark:border-slate-800 dark:bg-slate-900">
       <div className="overflow-x-auto">
@@ -44,8 +66,20 @@ export default function GridView({ tasks, members, onTaskClick, onUpdate }) {
                     <div className="flex flex-wrap gap-1">{task.tags.map((tag) => <span className="tag" key={tag}>{tag}</span>)}</div>
                   </td>
                   <td className="px-4 py-4">
-                    <input className="w-24 accent-control" type="range" min="0" max="100" value={task.progress} onChange={(event) => onUpdate(task.id, { progress: Number(event.target.value) })} />
-                    <span className="ml-2 text-xs font-bold">{task.progress}%</span>
+                    <input
+                      className="w-24 accent-control"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value={draftProgress[task.id] ?? task.progress}
+                      onChange={(event) => setDraftProgress((current) => ({ ...current, [task.id]: Number(event.target.value) }))}
+                      onPointerUp={() => commitProgress(task)}
+                      onBlur={() => commitProgress(task)}
+                      onKeyUp={(event) => {
+                        if (event.key === "Enter" || event.key === " ") commitProgress(task);
+                      }}
+                    />
+                    <span className="ml-2 text-xs font-bold">{draftProgress[task.id] ?? task.progress}%</span>
                   </td>
                 </tr>
               );

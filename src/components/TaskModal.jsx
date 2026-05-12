@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { X } from "lucide-react";
+import { Plus, Trash2, X } from "lucide-react";
 import { PRIORITIES, STATUSES } from "../constants";
 
 export default function TaskModal({ task, members, onClose, onSave }) {
@@ -10,6 +10,54 @@ export default function TaskModal({ task, members, onClose, onSave }) {
 
   function update(name, value) {
     setDraft((current) => ({ ...current, [name]: value }));
+  }
+
+  function addComment() {
+    setDraft((current) => ({ ...current, comments: [...current.comments, "New comment"] }));
+  }
+
+  function updateComment(index, value) {
+    setDraft((current) => ({
+      ...current,
+      comments: current.comments.map((comment, commentIndex) => (commentIndex === index ? value : comment))
+    }));
+  }
+
+  function removeComment(index) {
+    setDraft((current) => ({
+      ...current,
+      comments: current.comments.filter((_, commentIndex) => commentIndex !== index)
+    }));
+  }
+
+  function addSubtask() {
+    setDraft((current) => ({ ...current, subtasks: [...current.subtasks, { text: "New checklist item", done: false }] }));
+  }
+
+  function updateSubtask(index, updates) {
+    setDraft((current) => ({
+      ...current,
+      subtasks: current.subtasks.map((item, itemIndex) => (itemIndex === index ? { ...item, ...updates } : item))
+    }));
+  }
+
+  function removeSubtask(index) {
+    setDraft((current) => ({
+      ...current,
+      subtasks: current.subtasks.filter((_, itemIndex) => itemIndex !== index)
+    }));
+  }
+
+  function addAttachments(files) {
+    const names = Array.from(files).map((file) => file.name);
+    setDraft((current) => ({ ...current, attachments: [...current.attachments, ...names] }));
+  }
+
+  function removeAttachment(index) {
+    setDraft((current) => ({
+      ...current,
+      attachments: current.attachments.filter((_, attachmentIndex) => attachmentIndex !== index)
+    }));
   }
 
   function save() {
@@ -76,9 +124,42 @@ export default function TaskModal({ task, members, onClose, onSave }) {
         </div>
 
         <div className="mt-5 grid gap-4 md:grid-cols-3">
-          <InfoList title="Comments" items={draft.comments} />
-          <InfoList title="Checklist" items={draft.subtasks.map((item) => `${item.done ? "Done" : "Open"}: ${item.text}`)} />
-          <InfoList title="Attachments" items={draft.attachments.length ? draft.attachments : ["No files attached"]} />
+          <EditableList title="Comments" onAdd={addComment}>
+            {draft.comments.length === 0 && <p className="text-sm text-slate-500">No comments yet</p>}
+            {draft.comments.map((comment, index) => (
+              <div className="flex gap-2" key={`comment-${index}`}>
+                <input className="input" value={comment} onChange={(event) => updateComment(index, event.target.value)} />
+                <button className="icon-button" title="Remove comment" onClick={() => removeComment(index)}><Trash2 size={15} /></button>
+              </div>
+            ))}
+          </EditableList>
+
+          <EditableList title="Checklist" onAdd={addSubtask}>
+            {draft.subtasks.map((item, index) => (
+              <div className="flex items-center gap-2" key={`subtask-${index}`}>
+                <input className="size-4 accent-control" type="checkbox" checked={item.done} onChange={(event) => updateSubtask(index, { done: event.target.checked })} />
+                <input className="input" value={item.text} onChange={(event) => updateSubtask(index, { text: event.target.value })} />
+                <button className="icon-button" title="Remove checklist item" onClick={() => removeSubtask(index)}><Trash2 size={15} /></button>
+              </div>
+            ))}
+          </EditableList>
+
+          <div className="rounded-md border border-slate-200 p-3 dark:border-slate-800">
+            <h3 className="font-bold">Attachments</h3>
+            <label className="secondary-button mt-3 w-full justify-center">
+              Attach files
+              <input className="hidden" type="file" multiple onChange={(event) => addAttachments(event.target.files)} />
+            </label>
+            <div className="mt-3 space-y-2">
+              {draft.attachments.length === 0 && <p className="text-sm text-slate-500">No files attached</p>}
+              {draft.attachments.map((attachment, index) => (
+                <div className="flex items-center justify-between gap-2 rounded-md bg-slate-100 p-2 text-sm dark:bg-slate-800" key={`${attachment}-${index}`}>
+                  <span className="truncate">{attachment}</span>
+                  <button className="icon-button size-8" title="Remove attachment" onClick={() => removeAttachment(index)}><Trash2 size={14} /></button>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
         <div className="mt-6 flex justify-end gap-2">
@@ -90,13 +171,14 @@ export default function TaskModal({ task, members, onClose, onSave }) {
   );
 }
 
-function InfoList({ title, items }) {
+function EditableList({ title, onAdd, children }) {
   return (
     <div className="rounded-md border border-slate-200 p-3 dark:border-slate-800">
-      <h3 className="font-bold">{title}</h3>
-      <ul className="mt-2 space-y-2 text-sm text-slate-600 dark:text-slate-300">
-        {items.map((item, index) => <li key={`${item}-${index}`}>{item}</li>)}
-      </ul>
+      <div className="flex items-center justify-between gap-2">
+        <h3 className="font-bold">{title}</h3>
+        <button className="icon-button size-8" title={`Add ${title}`} onClick={onAdd}><Plus size={14} /></button>
+      </div>
+      <div className="mt-3 space-y-2">{children}</div>
     </div>
   );
 }
