@@ -11,15 +11,13 @@ import {
   Moon,
   Plus,
   Search,
-  Sun,
-  UsersRound
+  Sun
 } from "lucide-react";
 import { getData, updateTask, createTask } from "./api";
 import { aiSuggestions, PRIORITIES, STATUSES } from "./constants";
 import { applyFilters, calculateStats, formatDate } from "./utils";
 import BoardView from "./components/BoardView";
 import Dashboard from "./components/Dashboard";
-import EducationPage from "./components/EducationPage";
 import GridView from "./components/GridView";
 import TaskModal from "./components/TaskModal";
 
@@ -56,7 +54,10 @@ export default function App() {
   // App-level state keeps the demo easy to explain: API data, current view,
   // filters, selected task, theme, and real-time notifications all live here.
   const [data, setData] = useState({ tasks: [], members: [], sprints: [], activity: [] });
-  const [view, setView] = useState(() => localStorage.getItem("view") || "dashboard");
+  const [view, setView] = useState(() => {
+    const savedView = localStorage.getItem("view");
+    return ["dashboard", "board", "grid"].includes(savedView) ? savedView : "dashboard";
+  });
   const [filters, setFilters] = useState(defaultFilters);
   const [selectedTask, setSelectedTask] = useState(null);
   const [theme, setTheme] = useState(() => localStorage.getItem("theme") || "light");
@@ -127,15 +128,14 @@ export default function App() {
     <div className="min-h-screen bg-slate-50 text-slate-950 transition-colors dark:bg-slate-950 dark:text-slate-100">
       <main>
         <header className="sticky top-0 z-10 border-b border-slate-200 bg-white/90 px-4 py-4 backdrop-blur dark:border-slate-800 dark:bg-slate-950/90 sm:px-6">
+          <button className="theme-button absolute right-4 top-4" title="Toggle dark mode" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
+            {theme === "dark" ? <Sun size={15} /> : <Moon size={15} />}
+          </button>
           <div className="flex justify-center">
             <div className="flex flex-wrap items-center justify-center gap-2">
               <SegmentedButton active={view === "dashboard"} onClick={() => setView("dashboard")} icon={<LayoutDashboard size={17} />} label="Dashboard" />
               <SegmentedButton active={view === "board"} onClick={() => setView("board")} icon={<Columns3 size={17} />} label="Board" />
               <SegmentedButton active={view === "grid"} onClick={() => setView("grid")} icon={<Grid3X3 size={17} />} label="Grid" />
-              <SegmentedButton active={view === "learn"} onClick={() => setView("learn")} icon={<UsersRound size={17} />} label="Learn" />
-              <button className="icon-button" title="Toggle dark mode" onClick={() => setTheme(theme === "dark" ? "light" : "dark")}>
-                {theme === "dark" ? <Sun size={18} /> : <Moon size={18} />}
-              </button>
               <button className="primary-button" onClick={addTask}>
                 <Plus size={18} /> Task
               </button>
@@ -150,7 +150,6 @@ export default function App() {
               {view === "dashboard" && <Dashboard data={data} stats={stats} />}
               {view === "board" && <BoardView members={data.members} tasks={filteredTasks} onTaskClick={setSelectedTask} onMoveTask={patchTask} />}
               {view === "grid" && <GridView members={data.members} tasks={filteredTasks} onTaskClick={setSelectedTask} onUpdate={patchTask} />}
-              {view === "learn" && <EducationPage />}
             </div>
             <RightRail data={data} stats={stats} notifications={notifications} />
           </div>
