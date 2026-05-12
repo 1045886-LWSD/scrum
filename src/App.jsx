@@ -125,17 +125,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-50 text-slate-950 transition-colors dark:bg-slate-950 dark:text-slate-100">
-      <aside className="fixed inset-y-0 left-0 z-20 hidden w-20 border-r border-slate-200 bg-white/90 backdrop-blur dark:border-slate-800 dark:bg-slate-950/90 lg:block">
-        <div className="flex h-full flex-col items-center gap-4 py-5">
-          <div className="grid size-11 place-items-center rounded-lg bg-blue-600 text-lg font-bold text-white">AF</div>
-          <NavButton active={view === "dashboard"} icon={<LayoutDashboard />} label="Dashboard" onClick={() => setView("dashboard")} />
-          <NavButton active={view === "board"} icon={<Columns3 />} label="Board" onClick={() => setView("board")} />
-          <NavButton active={view === "grid"} icon={<Grid3X3 />} label="Grid" onClick={() => setView("grid")} />
-          <NavButton active={view === "learn"} icon={<UsersRound />} label="Learn" onClick={() => setView("learn")} />
-        </div>
-      </aside>
-
-      <main className="lg:pl-20">
+      <main>
         <header className="sticky top-0 z-10 border-b border-slate-200 bg-white/90 px-4 py-4 backdrop-blur dark:border-slate-800 dark:bg-slate-950/90 sm:px-6">
           <div className="flex flex-col gap-4 xl:flex-row xl:items-center xl:justify-between">
             <div>
@@ -183,14 +173,6 @@ export default function App() {
         />
       )}
     </div>
-  );
-}
-
-function NavButton({ active, icon, label, onClick }) {
-  return (
-    <button className={`icon-button ${active ? "bg-blue-600 text-white" : ""}`} title={label} onClick={onClick}>
-      {icon}
-    </button>
   );
 }
 
