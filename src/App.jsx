@@ -13,7 +13,7 @@ import {
   Search,
   Sun
 } from "lucide-react";
-import { getData, updateTask, createTask } from "./api";
+import { getData, updateTask, createTask, deleteTask } from "./api";
 import { aiSuggestions, PRIORITIES, STATUSES } from "./constants";
 import { applyFilters, calculateStats, formatDate } from "./utils";
 import BoardView from "./components/BoardView";
@@ -116,6 +116,15 @@ export default function App() {
     await updateTask(id, updates);
   }
 
+  async function removeTask(id) {
+    setData((current) => ({
+      ...current,
+      tasks: current.tasks.filter((task) => task.id !== id)
+    }));
+    await deleteTask(id);
+    setSelectedTask(null);
+  }
+
   async function addTask() {
     const task = createBlankTask(data.members[0]?.id || "alex");
     const created = await createTask(task);
@@ -173,6 +182,7 @@ export default function App() {
             await patchTask(selectedTask.id, updates);
             setSelectedTask(null);
           }}
+          onDelete={removeTask}
         />
       )}
     </div>

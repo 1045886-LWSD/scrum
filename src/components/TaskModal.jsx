@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Plus, Trash2, X } from "lucide-react";
 import { PRIORITIES, STATUSES } from "../constants";
 
-export default function TaskModal({ task, members, onClose, onSave }) {
+export default function TaskModal({ task, members, onClose, onSave, onDelete }) {
   const [draft, setDraft] = useState({
     ...task,
     tagsText: task.tags.join(", ")
@@ -67,6 +67,13 @@ export default function TaskModal({ task, members, onClose, onSave }) {
       tags: tagsText.split(",").map((tag) => tag.trim()).filter(Boolean),
       progress: Number(rest.progress)
     });
+  }
+
+  function deleteTask() {
+    const confirmed = window.confirm(`Delete "${draft.title}"? This cannot be undone.`);
+    if (confirmed) {
+      onDelete(task.id);
+    }
   }
 
   return (
@@ -162,9 +169,12 @@ export default function TaskModal({ task, members, onClose, onSave }) {
           </div>
         </div>
 
-        <div className="mt-6 flex justify-end gap-2">
-          <button className="secondary-button" onClick={onClose}>Cancel</button>
-          <button className="primary-button" onClick={save}>Save task</button>
+        <div className="mt-6 flex flex-wrap items-center justify-between gap-2">
+          <button className="danger-button" onClick={deleteTask}><Trash2 size={16} /> Delete task</button>
+          <div className="flex gap-2">
+            <button className="secondary-button" onClick={onClose}>Cancel</button>
+            <button className="primary-button" onClick={save}>Save task</button>
+          </div>
         </div>
       </section>
     </div>
