@@ -55,6 +55,258 @@
   ],
   "activity": [
     {
+      "id": "a-1778867687946",
+      "message": "Moved \"New sprint task\" to Done",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867685341",
+      "message": "Moved \"New sprint task\" to Done",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867618272",
+      "message": "Moved \"Prepare Agile explanation page\" to In Progress",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867617356",
+      "message": "Moved \"Prepare Agile explanation page\" to Testing",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867578420",
+      "message": "Moved \"Add AI task suggestion mockup\" to Done",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867560626",
+      "message": "Moved \"Add AI task suggestion mockup\" to Testing",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867559472",
+      "message": "Moved \"Add AI task suggestion mockup\" to To Do",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867558406",
+      "message": "Moved \"Add AI task suggestion mockup\" to Backlog",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867556907",
+      "message": "Moved \"Add AI task suggestion mockup\" to To Do",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867495480",
+      "message": "Created task \"New sprint task\"",
+      "type": "create",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867492180",
+      "message": "Moved \"Write accessibility test plan\" to To Do",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867491270",
+      "message": "Moved \"Write accessibility test plan\" to In Progress",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867458471",
+      "message": "Moved \"New sprint task\" to Testing",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867457206",
+      "message": "Moved \"New sprint task\" to In Progress",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867455415",
+      "message": "Moved \"New sprint task\" to To Do",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867354276",
+      "message": "Updated \"Write accessibility test plan\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867346544",
+      "message": "Updated \"Write accessibility test plan\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867289306",
+      "message": "Created task \"New sprint task\"",
+      "type": "create",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867286865",
+      "message": "Moved \"Create presentation screenshots\" to Testing",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867276642",
+      "message": "Moved \"Add AI task suggestion mockup\" to In Progress",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867274333",
+      "message": "Moved \"Build drag and drop board\" to Testing",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867273269",
+      "message": "Moved \"Build drag and drop board\" to In Progress",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867272712",
+      "message": "Moved \"Add AI task suggestion mockup\" to Testing",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778866574982",
+      "message": "Created task \"New sprint task\"",
+      "type": "create",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778866555272",
+      "message": "Created task \"New sprint task\"",
+      "type": "create",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778606510083",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778606508940",
+      "message": "Updated \"Build drag and drop board\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778606507569",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778606506547",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778606505143",
+      "message": "Updated \"Add AI task suggestion mockup\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778606504145",
+      "message": "Updated \"New sprint taskdfgdfg\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778606503326",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778606501280",
+      "message": "Updated \"Build drag and drop board\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778606501158",
+      "message": "Updated \"Add AI task suggestion mockup\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778606500596",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778606500362",
+      "message": "Updated \"New sprint taskdfgdfg\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778606499381",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778606499217",
+      "message": "Updated \"New sprint task\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778606488597",
+      "message": "Updated \"Build drag and drop board\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778606485985",
+      "message": "Updated \"Add AI task suggestion mockup\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778606483152",
+      "message": "Updated \"Add AI task suggestion mockup\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778606475979",
+      "message": "Updated \"Build drag and drop board\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
       "id": "a-1778606058767",
       "message": "Moved \"New sprint task\" to Done",
       "type": "move",
@@ -327,8 +579,8 @@
   ],
   "tasks": [
     {
-      "id": "task-1778605751039",
-      "progress": 20,
+      "id": "task-1778867495480",
+      "progress": 0,
       "points": 3,
       "comments": [],
       "subtasks": [
@@ -338,7 +590,111 @@
         }
       ],
       "attachments": [],
-      "updatedAt": "2026-05-12T17:09:31.356Z",
+      "updatedAt": "2026-05-15T17:51:35.480Z",
+      "title": "New sprint task",
+      "description": "Describe the work, acceptance criteria, and expected outcome.",
+      "priority": "Medium",
+      "assignee": "alex",
+      "dueDate": "2026-05-15",
+      "startDate": "2026-05-08",
+      "status": "Backlog",
+      "tags": [
+        "Planning"
+      ],
+      "label": "#a6cae2",
+      "notes": ""
+    },
+    {
+      "id": "task-1778867289306",
+      "progress": 0,
+      "points": 3,
+      "comments": [],
+      "subtasks": [
+        {
+          "text": "Define acceptance criteria",
+          "done": false
+        }
+      ],
+      "attachments": [],
+      "updatedAt": "2026-05-15T17:50:58.471Z",
+      "title": "New sprint task",
+      "description": "Describe the work, acceptance criteria, and expected outcome.",
+      "priority": "Medium",
+      "assignee": "alex",
+      "dueDate": "2026-05-15",
+      "startDate": "2026-05-08",
+      "status": "Testing",
+      "tags": [
+        "Planning"
+      ],
+      "label": "#a6cae2",
+      "notes": ""
+    },
+    {
+      "id": "task-1778866574982",
+      "progress": 0,
+      "points": 3,
+      "comments": [],
+      "subtasks": [
+        {
+          "text": "Define acceptance criteria",
+          "done": false
+        }
+      ],
+      "attachments": [],
+      "updatedAt": "2026-05-15T17:54:45.341Z",
+      "title": "New sprint task",
+      "description": "Describe the work, acceptance criteria, and expected outcome.",
+      "priority": "Medium",
+      "assignee": "alex",
+      "dueDate": "2026-05-15",
+      "startDate": "2026-05-08",
+      "status": "Done",
+      "tags": [
+        "Planning"
+      ],
+      "label": "#a6cae2",
+      "notes": ""
+    },
+    {
+      "id": "task-1778866555272",
+      "progress": 0,
+      "points": 3,
+      "comments": [],
+      "subtasks": [
+        {
+          "text": "Define acceptance criteria",
+          "done": false
+        }
+      ],
+      "attachments": [],
+      "updatedAt": "2026-05-15T17:54:47.946Z",
+      "title": "New sprint task",
+      "description": "Describe the work, acceptance criteria, and expected outcome.",
+      "priority": "Medium",
+      "assignee": "alex",
+      "dueDate": "2026-05-15",
+      "startDate": "2026-05-08",
+      "status": "Done",
+      "tags": [
+        "Planning"
+      ],
+      "label": "#a6cae2",
+      "notes": ""
+    },
+    {
+      "id": "task-1778605751039",
+      "progress": 31,
+      "points": 3,
+      "comments": [],
+      "subtasks": [
+        {
+          "text": "Define acceptance criteria",
+          "done": false
+        }
+      ],
+      "attachments": [],
+      "updatedAt": "2026-05-12T17:21:44.145Z",
       "title": "New sprint taskdfgdfg",
       "description": "Describe the work, acceptance criteria, and expected outcome.dfgdfg",
       "priority": "Critical",
@@ -354,7 +710,7 @@
     },
     {
       "id": "task-1778263536310",
-      "progress": 8,
+      "progress": 66,
       "points": 3,
       "comments": [],
       "subtasks": [
@@ -364,7 +720,7 @@
         }
       ],
       "attachments": [],
-      "updatedAt": "2026-05-12T17:14:18.767Z",
+      "updatedAt": "2026-05-12T17:21:46.547Z",
       "title": "New sprint task",
       "description": "Describe the work, acceptance criteria, and expected outcome.",
       "priority": "Medium",
@@ -380,7 +736,7 @@
     },
     {
       "id": "task-1778263272085",
-      "progress": 0,
+      "progress": 26,
       "points": 3,
       "comments": [],
       "subtasks": [
@@ -390,7 +746,7 @@
         }
       ],
       "attachments": [],
-      "updatedAt": "2026-05-08T18:01:12.085Z",
+      "updatedAt": "2026-05-12T17:21:47.569Z",
       "title": "New sprint task",
       "description": "Describe the work, acceptance criteria, and expected outcome.",
       "priority": "Medium",
@@ -432,7 +788,7 @@
     },
     {
       "id": "task-1778263267514",
-      "progress": 26,
+      "progress": 0,
       "points": 3,
       "comments": [],
       "subtasks": [
@@ -442,7 +798,7 @@
         }
       ],
       "attachments": [],
-      "updatedAt": "2026-05-08T18:01:53.703Z",
+      "updatedAt": "2026-05-12T17:21:50.083Z",
       "title": "New sprint task",
       "description": "Describe the work, acceptance criteria, and expected outcome.",
       "priority": "Medium",
@@ -561,10 +917,10 @@
         "React",
         "Kanban"
       ],
-      "progress": 90,
+      "progress": 0,
       "label": "#db2777",
       "points": 13,
-      "updatedAt": "2026-05-08T10:04:00.000Z",
+      "updatedAt": "2026-05-15T17:47:54.333Z",
       "comments": [
         "Demo this live by moving a card.",
         "Keep the code easy to read."
@@ -584,7 +940,9 @@
           "done": true
         }
       ],
-      "attachments": []
+      "attachments": [
+        "3 G's Cornell Notes.docx"
+      ]
     },
     {
       "id": "task-3",
@@ -642,10 +1000,10 @@
         "QA",
         "Accessibility"
       ],
-      "progress": 25,
+      "progress": 41,
       "label": "#7c3aed",
       "points": 5,
-      "updatedAt": "2026-05-08T08:10:00.000Z",
+      "updatedAt": "2026-05-15T17:51:32.180Z",
       "comments": [
         "Include keyboard shortcut checks."
       ],
@@ -682,7 +1040,7 @@
       "progress": 55,
       "label": "#0f766e",
       "points": 5,
-      "updatedAt": "2026-05-08T09:45:00.000Z",
+      "updatedAt": "2026-05-15T17:53:38.272Z",
       "comments": [
         "Add real company examples.",
         "Keep definitions short."
@@ -714,15 +1072,15 @@
       "assignee": "alex",
       "dueDate": "2026-05-15",
       "startDate": "",
-      "status": "In Progress",
+      "status": "Done",
       "tags": [
         "AI",
         "Planning"
       ],
-      "progress": 0,
+      "progress": 48,
       "label": "#a6cae2",
       "points": 3,
-      "updatedAt": "2026-05-08T18:05:34.196Z",
+      "updatedAt": "2026-05-15T17:52:58.420Z",
       "comments": [],
       "notes": "Mockup only, no real AI service needed.",
       "subtasks": [
@@ -778,7 +1136,7 @@
       "assignee": "maya",
       "dueDate": "2026-05-15",
       "startDate": "",
-      "status": "To Do",
+      "status": "Testing",
       "tags": [
         "Presentation",
         "Docs"
@@ -786,7 +1144,7 @@
       "progress": 10,
       "label": "#ea580c",
       "points": 2,
-      "updatedAt": "2026-05-08T17:59:04.111Z",
+      "updatedAt": "2026-05-15T17:48:06.865Z",
       "comments": [
         "Leave placeholders in the README."
       ],
