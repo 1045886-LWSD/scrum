@@ -39,6 +39,10 @@ textarea {
   @apply inline-flex min-h-10 items-center gap-2 rounded-md border border-slate-300 px-4 text-sm font-bold transition hover:bg-slate-100 dark:border-slate-700 dark:hover:bg-slate-800;
 }
 
+.danger-button {
+  @apply inline-flex min-h-10 items-center gap-2 rounded-md border border-red-200 bg-red-50 px-4 text-sm font-bold text-red-700 transition hover:bg-red-100 dark:border-red-900 dark:bg-red-950 dark:text-red-200 dark:hover:bg-red-900;
+}
+
 .icon-button {
   @apply grid size-10 place-items-center rounded-md border border-slate-200 bg-white text-slate-700 transition hover:bg-slate-100 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200 dark:hover:bg-slate-800;
 }
