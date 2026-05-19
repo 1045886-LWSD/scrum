@@ -55,6 +55,120 @@
   ],
   "activity": [
     {
+      "id": "a-1779124223458",
+      "message": "Updated \"Workflow\"",
+      "type": "update",
+      "time": "just now"
+    },
+    {
+      "id": "a-1779124192982",
+      "message": "Deleted task \"New sprint task\"",
+      "type": "delete",
+      "time": "just now"
+    },
+    {
+      "id": "a-1779124177537",
+      "message": "Created task \"New sprint task\"",
+      "type": "create",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867971613",
+      "message": "Moved \"Add AI task suggestion mockup\" to In Progress",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867958746",
+      "message": "Moved \"Write accessibility test plan\" to Backlog",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867956979",
+      "message": "Moved \"Prepare Agile explanation page\" to Backlog",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867949460",
+      "message": "Moved \"New sprint task\" to Backlog",
+      "type": "move",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867941111",
+      "message": "Deleted task \"New sprint task\"",
+      "type": "delete",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867938018",
+      "message": "Deleted task \"New sprint task\"",
+      "type": "delete",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867933492",
+      "message": "Deleted task \"New sprint task\"",
+      "type": "delete",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867929323",
+      "message": "Deleted task \"New sprint task\"",
+      "type": "delete",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867925965",
+      "message": "Deleted task \"New sprint task\"",
+      "type": "delete",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867922425",
+      "message": "Deleted task \"New sprint task\"",
+      "type": "delete",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867918314",
+      "message": "Deleted task \"New sprint taskdfgdfg\"",
+      "type": "delete",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867915012",
+      "message": "Deleted task \"New sprint task\"",
+      "type": "delete",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867911745",
+      "message": "Deleted task \"New sprint task\"",
+      "type": "delete",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867908694",
+      "message": "Deleted task \"New sprint task\"",
+      "type": "delete",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867905600",
+      "message": "Deleted task \"New sprint task\"",
+      "type": "delete",
+      "time": "just now"
+    },
+    {
+      "id": "a-1778867901317",
+      "message": "Created task \"New sprint task\"",
+      "type": "create",
+      "time": "just now"
+    },
+    {
       "id": "a-1778867687946",
       "message": "Moved \"New sprint task\" to Done",
       "type": "move",
@@ -579,8 +693,8 @@
   ],
   "tasks": [
     {
-      "id": "task-1778867495480",
-      "progress": 0,
+      "id": "task-1779124177537",
+      "progress": 7,
       "points": 3,
       "comments": [],
       "subtasks": [
@@ -590,270 +704,10 @@
         }
       ],
       "attachments": [],
-      "updatedAt": "2026-05-15T17:51:35.480Z",
-      "title": "New sprint task",
-      "description": "Describe the work, acceptance criteria, and expected outcome.",
-      "priority": "Medium",
-      "assignee": "alex",
-      "dueDate": "2026-05-15",
-      "startDate": "2026-05-08",
-      "status": "Backlog",
-      "tags": [
-        "Planning"
-      ],
-      "label": "#a6cae2",
-      "notes": ""
-    },
-    {
-      "id": "task-1778867289306",
-      "progress": 0,
-      "points": 3,
-      "comments": [],
-      "subtasks": [
-        {
-          "text": "Define acceptance criteria",
-          "done": false
-        }
-      ],
-      "attachments": [],
-      "updatedAt": "2026-05-15T17:50:58.471Z",
-      "title": "New sprint task",
-      "description": "Describe the work, acceptance criteria, and expected outcome.",
-      "priority": "Medium",
-      "assignee": "alex",
-      "dueDate": "2026-05-15",
-      "startDate": "2026-05-08",
-      "status": "Testing",
-      "tags": [
-        "Planning"
-      ],
-      "label": "#a6cae2",
-      "notes": ""
-    },
-    {
-      "id": "task-1778866574982",
-      "progress": 0,
-      "points": 3,
-      "comments": [],
-      "subtasks": [
-        {
-          "text": "Define acceptance criteria",
-          "done": false
-        }
-      ],
-      "attachments": [],
-      "updatedAt": "2026-05-15T17:54:45.341Z",
-      "title": "New sprint task",
-      "description": "Describe the work, acceptance criteria, and expected outcome.",
-      "priority": "Medium",
-      "assignee": "alex",
-      "dueDate": "2026-05-15",
-      "startDate": "2026-05-08",
-      "status": "Done",
-      "tags": [
-        "Planning"
-      ],
-      "label": "#a6cae2",
-      "notes": ""
-    },
-    {
-      "id": "task-1778866555272",
-      "progress": 0,
-      "points": 3,
-      "comments": [],
-      "subtasks": [
-        {
-          "text": "Define acceptance criteria",
-          "done": false
-        }
-      ],
-      "attachments": [],
-      "updatedAt": "2026-05-15T17:54:47.946Z",
-      "title": "New sprint task",
-      "description": "Describe the work, acceptance criteria, and expected outcome.",
-      "priority": "Medium",
-      "assignee": "alex",
-      "dueDate": "2026-05-15",
-      "startDate": "2026-05-08",
-      "status": "Done",
-      "tags": [
-        "Planning"
-      ],
-      "label": "#a6cae2",
-      "notes": ""
-    },
-    {
-      "id": "task-1778605751039",
-      "progress": 31,
-      "points": 3,
-      "comments": [],
-      "subtasks": [
-        {
-          "text": "Define acceptance criteria",
-          "done": false
-        }
-      ],
-      "attachments": [],
-      "updatedAt": "2026-05-12T17:21:44.145Z",
-      "title": "New sprint taskdfgdfg",
-      "description": "Describe the work, acceptance criteria, and expected outcome.dfgdfg",
+      "updatedAt": "2026-05-18T17:10:23.458Z",
+      "title": "Workflow",
+      "description": "utilize it ",
       "priority": "Critical",
-      "assignee": "alex",
-      "dueDate": "2026-05-15",
-      "startDate": "2026-05-08",
-      "status": "Backlog",
-      "tags": [
-        "Planning"
-      ],
-      "label": "#1f96e5",
-      "notes": "dfgdfg"
-    },
-    {
-      "id": "task-1778263536310",
-      "progress": 66,
-      "points": 3,
-      "comments": [],
-      "subtasks": [
-        {
-          "text": "Define acceptance criteria",
-          "done": false
-        }
-      ],
-      "attachments": [],
-      "updatedAt": "2026-05-12T17:21:46.547Z",
-      "title": "New sprint task",
-      "description": "Describe the work, acceptance criteria, and expected outcome.",
-      "priority": "Medium",
-      "assignee": "alex",
-      "dueDate": "2026-05-15",
-      "startDate": "2026-05-08",
-      "status": "Done",
-      "tags": [
-        "Planning"
-      ],
-      "label": "#a6cae2",
-      "notes": ""
-    },
-    {
-      "id": "task-1778263272085",
-      "progress": 26,
-      "points": 3,
-      "comments": [],
-      "subtasks": [
-        {
-          "text": "Define acceptance criteria",
-          "done": false
-        }
-      ],
-      "attachments": [],
-      "updatedAt": "2026-05-12T17:21:47.569Z",
-      "title": "New sprint task",
-      "description": "Describe the work, acceptance criteria, and expected outcome.",
-      "priority": "Medium",
-      "assignee": "alex",
-      "dueDate": "2026-05-15",
-      "startDate": "2026-05-08",
-      "status": "Backlog",
-      "tags": [
-        "Planning"
-      ],
-      "label": "#a6cae2",
-      "notes": ""
-    },
-    {
-      "id": "task-1778263270344",
-      "progress": 0,
-      "points": 3,
-      "comments": [],
-      "subtasks": [
-        {
-          "text": "Define acceptance criteria",
-          "done": false
-        }
-      ],
-      "attachments": [],
-      "updatedAt": "2026-05-08T18:01:10.344Z",
-      "title": "New sprint task",
-      "description": "Describe the work, acceptance criteria, and expected outcome.",
-      "priority": "Medium",
-      "assignee": "alex",
-      "dueDate": "2026-05-15",
-      "startDate": "2026-05-08",
-      "status": "Backlog",
-      "tags": [
-        "Planning"
-      ],
-      "label": "#a6cae2",
-      "notes": ""
-    },
-    {
-      "id": "task-1778263267514",
-      "progress": 0,
-      "points": 3,
-      "comments": [],
-      "subtasks": [
-        {
-          "text": "Define acceptance criteria",
-          "done": false
-        }
-      ],
-      "attachments": [],
-      "updatedAt": "2026-05-12T17:21:50.083Z",
-      "title": "New sprint task",
-      "description": "Describe the work, acceptance criteria, and expected outcome.",
-      "priority": "Medium",
-      "assignee": "alex",
-      "dueDate": "2026-05-15",
-      "startDate": "2026-05-08",
-      "status": "Backlog",
-      "tags": [
-        "Planning"
-      ],
-      "label": "#000000",
-      "notes": ""
-    },
-    {
-      "id": "task-1778263265641",
-      "progress": 0,
-      "points": 3,
-      "comments": [],
-      "subtasks": [
-        {
-          "text": "Define acceptance criteria",
-          "done": false
-        }
-      ],
-      "attachments": [],
-      "updatedAt": "2026-05-08T18:01:05.641Z",
-      "title": "New sprint task",
-      "description": "Describe the work, acceptance criteria, and expected outcome.",
-      "priority": "Medium",
-      "assignee": "alex",
-      "dueDate": "2026-05-15",
-      "startDate": "2026-05-08",
-      "status": "Backlog",
-      "tags": [
-        "Planning"
-      ],
-      "label": "#a6cae2",
-      "notes": ""
-    },
-    {
-      "id": "task-1778263263529",
-      "progress": 0,
-      "points": 3,
-      "comments": [],
-      "subtasks": [
-        {
-          "text": "Define acceptance criteria",
-          "done": false
-        }
-      ],
-      "attachments": [],
-      "updatedAt": "2026-05-08T18:01:03.529Z",
-      "title": "New sprint task",
-      "description": "Describe the work, acceptance criteria, and expected outcome.",
-      "priority": "Medium",
       "assignee": "alex",
       "dueDate": "2026-05-15",
       "startDate": "2026-05-08",
@@ -995,7 +849,7 @@
       "assignee": "maya",
       "dueDate": "2026-05-13",
       "startDate": "2026-05-06",
-      "status": "To Do",
+      "status": "Backlog",
       "tags": [
         "QA",
         "Accessibility"
@@ -1003,7 +857,7 @@
       "progress": 41,
       "label": "#7c3aed",
       "points": 5,
-      "updatedAt": "2026-05-15T17:51:32.180Z",
+      "updatedAt": "2026-05-15T17:59:18.746Z",
       "comments": [
         "Include keyboard shortcut checks."
       ],
@@ -1032,7 +886,7 @@
       "assignee": "olivia",
       "dueDate": "2026-05-14",
       "startDate": "2026-05-05",
-      "status": "In Progress",
+      "status": "Backlog",
       "tags": [
         "Presentation",
         "Scrum"
@@ -1040,7 +894,7 @@
       "progress": 55,
       "label": "#0f766e",
       "points": 5,
-      "updatedAt": "2026-05-15T17:53:38.272Z",
+      "updatedAt": "2026-05-15T17:59:16.979Z",
       "comments": [
         "Add real company examples.",
         "Keep definitions short."
@@ -1072,7 +926,7 @@
       "assignee": "alex",
       "dueDate": "2026-05-15",
       "startDate": "",
-      "status": "Done",
+      "status": "In Progress",
       "tags": [
         "AI",
         "Planning"
@@ -1080,7 +934,7 @@
       "progress": 48,
       "label": "#a6cae2",
       "points": 3,
-      "updatedAt": "2026-05-15T17:52:58.420Z",
+      "updatedAt": "2026-05-15T17:59:31.613Z",
       "comments": [],
       "notes": "Mockup only, no real AI service needed.",
       "subtasks": [
